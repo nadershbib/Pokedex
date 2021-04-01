@@ -15,6 +15,35 @@ body{
     margin: 0;
 }
 
+.loader{
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(226,226,226,0.75);
+}
+
+.loader img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 140px;
+    height: 140px;
+    animation: spin 0.7s ease-out infinite forwards;
+    
+}
+
+@keyframes spin{
+     0%{
+         transform: translate(-50%,-50%) rotate(0);
+     }
+     100%{
+         transform:translate(-50%,-50%) rotate(360deg);
+     }
+}
+
 h1{
     letter-spacing: 3px;
 }
